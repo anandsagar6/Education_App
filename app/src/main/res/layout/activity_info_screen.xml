@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@drawable/background_1"
+    tools:context=".enterverifyotp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/man"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/firstName"
+            android:hint="First name"
+            android:backgroundTint="@color/colorTextsecond"
+            android:textColorHint="@color/colorTextsecond"
+            android:layout_marginEnd="50dp"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/lastname"
+        android:hint="Last name"
+           android:backgroundTint="@color/colorTextsecond"
+        android:textColorHint="@color/colorTextsecond"
+        android:layout_marginEnd="50dp"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:hint="Bio"
+            android:textColorHint="@color/colorTextsecond"
+            android:backgroundTint="@color/colorTextsecond"
+            android:layout_marginEnd="50dp"
+            android:id="@+id/schoolname"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/classnum"
+
+            android:textColorHint="@color/colorTextsecond"
+            android:hint="Hobbies"
+            android:backgroundTint="@color/colorTextsecond"
+            android:layout_marginEnd="50dp"
+            android:textStyle="bold"
+
+
+            android:text="@string/please_enter_the_otp_sent_to_you"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:layout_width="276dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:id="@+id/btnsave"
+            android:background="@drawable/background_pink"
+            android:textColor="@color/white"
+            android:text="Save"
+
+            />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -73,33 +73,26 @@ public class DashBoard extends AppCompatActivity implements NavigationView.OnNav
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int i=item.getItemId();
-                if(i==R.id.home){
+                int itemId = item.getItemId();
 
+                if (itemId == R.id.homee) {
                     Toast.makeText(DashBoard.this, "Home", Toast.LENGTH_SHORT).show();
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Home_Fragment()).commit();
-
-
-
-                }  else if (i==R.id.search) {
+                } else if (itemId == R.id.search) {
                     Toast.makeText(DashBoard.this, "Search", Toast.LENGTH_SHORT).show();
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Search_Fragment()).commit();
-
-
-
-                }
-                else if(i==R.id.account) {
+                } else if (itemId == R.id.account) {
                     Toast.makeText(DashBoard.this, "Account", Toast.LENGTH_SHORT).show();
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ProfileFragment()).commit();
-
-                } else if (i==R.id.wish_list) {
-                    Toast.makeText(DashBoard.this, "whishlist", Toast.LENGTH_SHORT).show();
+                } else if (itemId == R.id.wish_list) {
+                    Toast.makeText(DashBoard.this, "Wishlist", Toast.LENGTH_SHORT).show();
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Whislist_Fragment()).commit();
-
                 }
+
                 return false;
             }
         });
+
 
     }
 
