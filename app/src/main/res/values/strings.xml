@@ -7,4 +7,7 @@
     <string name="hello_blank_fragment" />
     <string name="Open">OpenDrawer</string>
     <string name="Close">CloseDrawer</string>
+    <string name="home">home</string>
+    <string name="profie">profie</string>
+    <string name="notes">notes</string>
 </resources>

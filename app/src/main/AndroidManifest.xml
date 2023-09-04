@@ -12,25 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
-
+        <activity
+            android:name=".Sciencesubject"
+            android:exported="false" />
+        <activity
+            android:name=".InfoScreen"
+            android:exported="false" />
         <activity
             android:name=".entermobilenumber"
             android:exported="false" />
         <activity
             android:name=".enterverifyotp"
             android:exported="false" />
-
-
+        <activity
+            android:name=".NewUser"
+            android:exported="false" />
         <activity
             android:name=".DashBoard"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NewUser"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
